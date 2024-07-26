@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ~ Login Page */
+.login-page {
+  min-height: 100vh;
+  font-family: 'UI - 30 Semi', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.email-con,
+.pass-con {
+  width: 100%;
+  height: 50px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+}
+
+.email-con input,
+.pass-con input {
+  height: 100%;
+  width: 75%;
+  border: none;
+  outline: none;
+  background-color: #f6f6f6;
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+.email-con input::placeholder,
+.pass-con input::placeholder {
+  color: #bdbdbd;
+}
+
+button {
+  cursor: pointer;
+}
+
+#show-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.invalid {
+  color: red;
+  text-align: center;
+}
+
+#login-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+/* ~ Index Page */
+
+.container {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* Left Side */
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 600px;
+  position: relative;
+}
+
+.buttons .btn-cont {
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.btn-cont i {
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+
+.btn-cont .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  margin-left: 20px;
+  color: #000000;
+}
+
+.buttons .active {
+  background-color: #000000;
+  border-radius: 0 50px 50px 0;
+}
+
+.active i {
+  color: #ffffff;
+}
+
+.active .btn {
+  color: #ffffff;
+}
+
+.logout-btn {
+  position: absolute;
+  bottom: 4%;
+}
+
+/* Task Right Side */
+.container .content {
+  flex: 1;
+  margin-left: 30px;
+  height: 600px;
+}
+
+.add-new-task {
+  height: 380px;
+}
+
+#btn-add {
+  margin-top: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.incomp {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#btn-add,
+.incomp {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.added-task {
+  margin-bottom: 15px;
+}
+
+.added-task input[name='added-checkbox'] {
+  cursor: pointer;
+}
+
+.added-task .current-task {
+  display: inline;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.added-task .task-time {
+  margin-left: 25px;
+  font-size: 12px;
+}
+
+.added-task label.label-hide {
+  display: none;
+}
+
+.completed {
+  margin-top: 20px;
+  height: 190px;
+}
+
+.comp-p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.completed-task {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #b9b9be;
+}
+
+.completed-task img {
+  width: 15px;
+}
+
+.completed-task label {
+  margin-left: 10px;
+}
+
+/* POPUP */
+.popup-container {
+  width: 765px;
+  height: 470px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #bdbdbdcc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.popup-container p {
+  margin-top: 30px;
+  margin-left: 45px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.popup-container .all-details {
+  margin-top: 30px;
+  height: 250px;
+  /* background-color: rebeccapurple; */
+}
+
+.div-detail {
+  margin-left: 70px;
+  width: 80%;
+  border-bottom: 2px solid #bdbdbdcc;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.div-detail img {
+  margin-left: 20px;
+}
+
+.div-detail input {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.descrip-div img {
+  margin-bottom: 70px;
+}
+
+.descrip-div textarea {
+  width: 90%;
+  height: 90px;
+  font-size: 1.3rem;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#fill-field {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 38%;
+  margin-top: 0;
+}
+
+.fill-hide {
+  display: none;
+}
+
+.save-cancel {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin-left: 25%;
+  margin-top: 25px;
+}
+
+.save-cancel button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.save-cancel #save-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-hide {
+  display: none;
+}
+
+/* To hide task side */
+.content-hide {
+  display: none;
+}
+
+/* Reminder Popup */
+div#reminder-popup-id.reminder-popup {
+  background-color: #ffffff;
+  width: 350px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  left: 72%;
+  top: 5%;
+  z-index: 1000;
+}
+
+.summ-descrip-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.summ-descrip-icon img {
+  padding-left: 15px;
+}
+
+#reminder-summary {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#reminder-descrip {
+  color: #575767;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reminder-btns {
+  height: 35px;
+  background-color: #f6f5f5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#skip-btn,
+#remind-later-btn {
+  border: none;
+  background-color: transparent;
+}
+
+#remind-later-btn {
+  margin: 0 15px 0 15px;
+}
+
+.reminder-popup-hide {
+  display: none;
+}
+
+/* Location Right Side */
+.container .location-container {
+  margin-left: 30px;
+  height: 600px;
+}
+
+.location-container #check {
+  margin-top: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.location-container #curr-loc {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.location-container #prev-loc {
+  margin-bottom: 15px;
+}
+
+#check,
+#curr-loc,
+#prev-loc {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.current-loc-con {
+  height: 80px;
+  /* background-color: saddlebrown; */
+}
+
+.current-loc-con > p {
+  color: red;
+}
+
+.current-loc-con > .error-hide {
+  display: none;
+}
+
+.previous-loc-con {
+  height: 60%;
+  /* background-color: aqua; */
+}
+
+.previous-loc-added {
+  margin-bottom: 15px;
+}
+
+.city {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.coordinates {
+  margin-left: 40px;
+  color: #b9b9be;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.location-container-hide {
+  display: none;
+}

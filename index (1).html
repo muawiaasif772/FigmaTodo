@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Task</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style (1).css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <div class="task-btn btn-cont active">
+          <i class="fa-solid fa-notes-medical"></i>
+          <button class="btn" id="task">Task</button>
+        </div>
+        <div class="location-btn btn-cont">
+          <i class="fa-solid fa-location-dot"></i>
+          <button class="btn" id="location">Location</button>
+        </div>
+        <div class="logout-btn btn-cont">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <button class="btn" id="logout">Logout</button>
+        </div>
+      </div>
+      <!-- TASK SIDE -->
+      <div class="content">
+        <div class="add-new-task">
+          <button id="btn-add">+ Add new task</button>
+          <p class="incomp">Incomplete</p>
+          <div class="all-added-tasks">
+            <!-- <div class="added-task">
+              <input type="checkbox" name="added-checkbox" />
+              <p class="current-task">Submit my resume</p>
+              <p class="task-time">⏰ Today, 17:00</p>
+              <label class="label-hide">1, 8, 4, 2024</label>
+              <label class="label-hide" id="text-area-descrip"
+                >description of text area</label
+              >
+            </div> -->
+          </div>
+        </div>
+        <div class="completed">
+          <p class="comp-p">Completed</p>
+          <div class="all-completed">
+            <!-- <div class="completed-task">
+              <img src="./icons/Checked.svg" />
+              <label>Complete the test</label>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- POPUP -->
+      <div class="popup-container popup-hide">
+        <p>New Task</p>
+        <div class="all-details">
+          <div class="summary-div div-detail">
+            <img src="./icons/summary.svg" alt="" />
+            <input type="text" id="summary-text" placeholder="Summary" />
+          </div>
+          <div class="descrip-div div-detail">
+            <img src="./icons/descrip.svg" alt="" />
+            <textarea id="descrip-text" placeholder="Description"></textarea>
+          </div>
+          <div class="date-div div-detail">
+            <img src="./icons/due-date.svg" alt="" />
+            <input
+              type="datetime-local"
+              id="date-text"
+              placeholder="Due Date"
+            />
+          </div>
+          <p id="fill-field" class="fill-hide">Please fill out all fields</p>
+          <div class="save-cancel">
+            <button id="save-btn">Save</button>
+            <button id="cancel-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <!--  REMINDER POPUP -->
+      <div id="reminder-popup-id" class="reminder-popup reminder-popup-hide">
+        <div class="summ-descrip-icon">
+          <div class="summ-descrip">
+            <p id="reminder-summary">Submit my resume</p>
+            <p id="reminder-descrip">Send my resume to DigitalTolk</p>
+          </div>
+          <img src="Frame.svg" />
+        </div>
+        <div class="reminder-btns">
+          <button id="skip-btn">Skip</button>
+          <button id="remind-later-btn">Remind me later</button>
+        </div>
+      </div>
+      <!-- LOCATION SIDE -->
+      <div class="location-container location-container-hide">
+        <button id="check">+ Check In</button>
+        <p id="curr-loc">Current Location</p>
+        <div class="current-loc-con">
+          <!-- <div class="current-loc-added">
+            <label>📍</label>
+            <p class="city">BAHAWALPUR</p>
+            <p class="coordinates">45 CC</p>
+          </div> -->
+          <p class="error-hide">Error While fetching data...</p>
+        </div>
+        <p id="prev-loc">Previous Location</p>
+        <div class="previous-loc-con">
+          <!-- <div class="previous-loc-added">
+            <label>📍</label>
+            <p class="city">BAHAWALPUR</p>
+            <p class="coordinates">45 CC</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <script type="module" defer src="./main.js"></script> -->
+    <script src="script (1).js"></script>
+  </body>
+</html>
